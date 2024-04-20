@@ -10,8 +10,12 @@ export class AgeViewComponent {
 
   constructor(private service: NameService) {}
 
-  public getName() {
-    return this.service.getName();
+  public getFirstName() {
+    return this.service.getFirstName();
+  }
+
+  public getLastName() {
+    return this.service.getLastName();
   }
 
   public getState() {

@@ -3,5 +3,7 @@
 </div>
 <div>
     <h3>Please Enter a First Name:</h3>
-    <input #name type="text" (keydown.enter)="handleKeyPress(name.value)"/>
+    <input #firstName type="text"/>
+    <h3>Please Enter a Last Name:</h3>
+    <input #lastName type="text" (keydown.enter)="handleKeyPressFirstName(firstName.value); handleKeyPressLastName(lastName.value)"/>
 </div>

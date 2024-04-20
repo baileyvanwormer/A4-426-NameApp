@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { NameViewComponent } from './name-view/name-view.component';
 import { AgeViewComponent } from './age-view/age-view.component';
 import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
+import { DetailsViewComponent } from './details-view/details-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NameViewComponent,
-    AgeViewComponent
+    AgeViewComponent,
+    DetailsViewComponent
   ],
   imports: [
     BrowserModule,
