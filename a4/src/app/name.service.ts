@@ -13,7 +13,8 @@ export class NameService {
   private state: string = "initial";
   private age: number = 0;
   private APIKey: string = "7f55ed4b1f25bc51a5b88da689fafa98";
-  private details: string = "";
+  private origin: string = "";
+  private region: string = "";
 
   constructor(private http: HttpClient) { }
 
@@ -37,8 +38,12 @@ export class NameService {
     return this.APIKey;
   }
 
-  public getDetails() {
-    return this.details;
+  public getOrigin() {
+    return this.origin;
+  }
+
+  public getRegion() {
+    return this.region;
   }
 
   public setFirstName(firstName: string) {
@@ -57,8 +62,12 @@ export class NameService {
     this.age = age;
   }
 
-  public setDetails(details: string) {
-    this.details = details;
+  public setOrigin(origin: string) {
+    this.origin = origin;
+  }
+
+  public setRegion(region: string) {
+    this.region = region;
   }
 
   public callAgeAPI() {

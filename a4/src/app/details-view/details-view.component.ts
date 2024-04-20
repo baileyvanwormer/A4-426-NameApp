@@ -10,8 +10,12 @@ export class DetailsViewComponent {
 
   constructor(private service: NameService) {}
 
-  public getDetails() {
-    return this.service.getDetails();
+  public getOrigin() {
+    return this.service.getOrigin();
+  }
+
+  public getRegion() {
+    return this.service.getRegion();
   }
 
 }

@@ -1,9 +1,16 @@
-<div>
+<div class="header">
     <h1>Welcome to the Name App!</h1>
 </div>
 <div>
-    <h3>Please Enter a First Name:</h3>
-    <input #firstName type="text"/>
-    <h3>Please Enter a Last Name:</h3>
-    <input #lastName type="text" (keydown.enter)="handleKeyPressFirstName(firstName.value); handleKeyPressLastName(lastName.value)"/>
+    <div class="input">
+        <label>Please Enter a First Name:</label>
+        <input #firstName type="text"/>
+    </div>
+    <div class="input">
+        <label>Please Enter a Last Name:</label>
+        <input #lastName type="text" (keydown.enter)="handleKeyPressFirstName(firstName.value); handleKeyPressLastName(lastName.value)"/>
+    </div>
+</div>
+<div class="submit" >
+    <button (click)="handleKeyPressFirstName(firstName.value); handleKeyPressLastName(lastName.value);">Submit</button>
 </div>
